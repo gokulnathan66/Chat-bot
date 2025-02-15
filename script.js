@@ -14,7 +14,7 @@ async function sendMessage() {
 
     // Send the user input to the backend (Gemini API)
     try {
-        const response = await fetch('http://127.0.0.1:5000/chat', {
+        const response = await fetch('https://chatbot-ai-backend-gokul-8382181cf70b.herokuapp.com/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: userInput }),
